@@ -12,8 +12,7 @@
  <meta name="revisit-after" content="1 week">
  <meta name=viewport content="width=device-width, initial-scale=1">
  <title>SuicSoft - Freeware, without Badware</title>
- 
-  <script src="/js/ads.js"></script>
+
 
   <!-- Styles & Scripts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
@@ -65,7 +64,7 @@
 
               <a name="top"></a>
               <div class="android-be-together-section mdl-typography--text-center">
-                <div class="android-slogan" style="font-family: 'Roboto', serif;">better software. happier PCs</div>
+                <div class="android-slogan" id="container"></div>
                 <div class="android-sub-slogan" style="font-family: 'Roboto', serif;">At SuicSoft.com, we've got our very own, badware free, high quality software - and it's all FREE </div>
                 <div class="android-create-character">
                   <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="software.html">
@@ -193,4 +192,26 @@
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+   <script>
+
+       //define text
+       var text = 'Better Software. Happier PCs';
+
+       //text is split up to letters
+       $.each(text.split(''), function(i, letter){
+
+           //we add 100*i ms delay to each letter
+           setTimeout(function(){
+
+               //we add the letter to the container
+               $('#container').html($('#container').html() + letter);
+
+           }, 100*i);
+       });
+
+   </script>
+
 </html>
