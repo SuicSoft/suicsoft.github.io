@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="material.blue-indigo.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+
 </head>
 
 <body>
@@ -38,7 +42,9 @@
    <header class="mdl-layout__header mdl-layout__header--scroll" style="position: fixed;box-shadow: 1px 1px 10px grey;">
      <div class="mdl-layout__header-row">
        <!-- Title -->
-       <span class="mdl-layout-title" style="font-family:Audiowide;font-size: 23px;">SuicSoft</span>
+       <span class="mdl-layout-title">
+<img src="images/SuicSoft.png" style="height: 50px"><img>
+       </span>
        <!-- Add spacer, to align navigation to the right -->
        <div class="mdl-layout-spacer"></div>
        <!-- Navigation -->
@@ -59,6 +65,26 @@
        <a class="mdl-navigation__link" href="faq.html">FAQ &amp; About</a>
      </nav>
    </div>
+
+   <script>
+
+       //define text
+       var text = 'Better Software. Happier PCs';
+
+       //text is split up to letters
+       $.each(text.split(''), function(i, letter){
+
+           //we add 100*i ms delay to each letter
+           setTimeout(function(){
+
+               //we add the letter to the container
+               $('#container').html($('#container').html() + letter);
+
+           }, 100*i);
+       });
+
+   </script>
+
    <main class="mdl-layout__content">
      <div class="page-content">
 
@@ -92,11 +118,10 @@
                 <div class="android-customized-section-text">
                   <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Likes What You Like</div>
                   <p class="mdl-typography--font-light">
-                    Not everyone likes Suici Blue. Not everyone likes Material Design. Our Software automatically uses your Accent Colour to make SuicSoft Software look like your PC and Themes are downloadable and easily creatable - So, SuicSoft Software can be customized,
-                    coloured and themed like you want it to.
+                    Not everyone likes Suici Blue. Our Software have a bunch of Material Design colours for you to choose from. You can make your Little's PDF Merge look different from your neighbors' one.
                     <br>
                     <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                                    Download Themes [Coming Soon]<i class="material-icons">chevron_right</i>
+                                    Start Colouring LPM!<i class="material-icons">chevron_right</i>
                                 </a>
                   </p>
                 </div>
@@ -116,8 +141,8 @@
                       <span class="mdl-typography--font-light mdl-typography--subhead">Our Free PDF Document Merger, Little's PDF Merge can Merge PDFs with Passwords, has a nice look &amp; is the fastest pdf merger on the web!</span>
                     </div>
                     <div class="mdl-card__actions">
-                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://ad0fc735a65690460ff76c7534bc074636a5d62f.googledrive.com/host/0B08cCnnU-zt-c1A3X2dhRFZ6cm8/setup.exe">
-                                        Download
+                      <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="lpm.html">
+                                        Learn more and Get it FREE!
                                         <i class="material-icons">chevron_right</i>
                                     </a>
                     </div>
@@ -175,8 +200,16 @@
                   </div>
                 </div>
               </div>
+              <div id="view-source">
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+    <a href="http://github.com/suicsoft" style="color: rgb(255, 255, 255); text-decoration: none;">
+      View our source code on GitHub!
+    </a>
+ </button>
 
-          <a id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" data-upgraded=",MaterialButton,MaterialRipple" hrf="software.html">Download<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 225.449031608021px; height: 225.449031608021px; transform: translate(-50%, -50%) translate(37px, 13px);"></span></span></a>
+  <img src="images/octocat.png" style="height: 75px;"/>
+
+</div>
      </div>
    </main>
  </div>
@@ -192,26 +225,4 @@
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
-   <script>
-
-       //define text
-       var text = 'Better Software. Happier PCs';
-
-       //text is split up to letters
-       $.each(text.split(''), function(i, letter){
-
-           //we add 100*i ms delay to each letter
-           setTimeout(function(){
-
-               //we add the letter to the container
-               $('#container').html($('#container').html() + letter);
-
-           }, 100*i);
-       });
-
-   </script>
-
-</html>
+  </html>
