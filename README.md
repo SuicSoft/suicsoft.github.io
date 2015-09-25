@@ -1,6 +1,8 @@
-# SuicSoft.com / SuicSoft-Dot-Com
-Code of our website, found at SuicSoft.com. Built with HTML, CSS and JAVASCRIPT. SuicSoft.com is based on the Material Design Lite
-Template, Android-Dot-Com - found at https://github.com/google/material-design-lite/tree/master/templates/android-dot-com
+# SuicSoft.com / SuicSoft-Dot-Com - Weekly Ring
+
+**You are on the WEEKLY RING branch. This is not stable stuff! If you want stable stuff, check out the Master branch. If you want to be even more unstable, see the DAILY RING BRANCH**
+
+Code of our website, found at SuicSoft.com. Built with HTML, CSS and JAVASCRIPT. SuicSoft.com is based on the Material Design Lite Template, Android-Dot-Com - found at https://github.com/google/material-design-lite/tree/master/templates/android-dot-com
 
 Free to use, distrubute and modify. You can't sell this, and remove all '<i>SuicSoft</i>' stuff if you're using it on you're site
 (keep the dog if you like!) - read more in <b>LICENSE.txt</b>
