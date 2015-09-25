@@ -1,4 +1,5 @@
 # SuicSoft.com / SuicSoft-Dot-Com
+**You are on the DAILY RING branch. This is not stable stuff! This stuff is built each time we leave our PC after doing some code. If you don't want to be so unstable, see the WEEKLY RING. Stable stuff is in the Master Branch**
 Code of our website, found at SuicSoft.com. Built with HTML, CSS and JAVASCRIPT. SuicSoft.com is based on the Material Design Lite
 Template, Android-Dot-Com - found at https://github.com/google/material-design-lite/tree/master/templates/android-dot-com
 
