@@ -23,9 +23,6 @@
   <link rel="stylesheet" href="material.blue-indigo.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 
-  <script src="jquery-2.1.4.min.js"></script>
-  <script src="jquery-ui.min.js"></script>
-
 </head>
 
 <body>
@@ -67,31 +64,14 @@
      </nav>
    </div>
 
-   <script>
 
-       //define text
-       var text = 'Better Software. Happier PCs';
-
-       //text is split up to letters
-       $.each(text.split(''), function(i, letter){
-
-           //we add 100*i ms delay to each letter
-           setTimeout(function(){
-
-               //we add the letter to the container
-               $('#container').html($('#container').html() + letter);
-
-           }, 100*i);
-       });
-
-   </script>
 
    <main class="mdl-layout__content">
      <div class="page-content">
 
               <a name="top"></a>
               <div class="android-be-together-section mdl-typography--text-center">
-                <div class="android-slogan" id="container"></div>
+                <div class="android-slogan" id="container">Better Software. Happier PCs</div>
                 <div class="android-sub-slogan" style="font-family: 'Roboto', serif;">At SuicSoft.com, we've got our very own, badware free, high quality software - and it's all FREE </div>
                 <div class="android-create-character">
                   <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="software.html">
