@@ -46,43 +46,8 @@ width 0.2s cubic-bezier(0.4, 0, 0.2, 1);}
 .android-be-together-section{position:relative;height:800px;width:auto;background-color:#f3f3f3;background:url('images/slide01.jpg') center 30% no-repeat;background-size:cover;}
 .android-font{font-family:'And Black', 'Helvetica', 'Arial', sans-serif;line-height:1;color:#767777;font-weight:300;}
 .android-slogan{
-  font-size:60px;padding-top:160px;animation: fadein 2s;-moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s; -o-animation: fadein 2s;
+  font-size:60px;padding-top:160px;
 }
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .android-sub-slogan{font-size:21px;padding-top:24px;}
 .android-create-character{font-size:21px;padding-top:400px;}
 .android-create-character a{text-decoration:none;font-weight:300;}
