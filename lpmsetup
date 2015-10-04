@@ -1,0 +1,12 @@
+<html>
+<head>
+    <script language=javascript>
+function redirect(){
+  window.location = "http://suicsoft.com/updates/lpm/2.4.0/LPMSetup.exe";
+}
+</script>
+</head>
+    <body onload="redirect()">
+        
+    </body>
+</html>
