@@ -10,7 +10,6 @@ url("fonts/and_black.ttf") format('truetype');}
 .demo-content h3{margin-top:48px;}
 .demo-footer{padding-left:40px;}
 .demo-footer .mdl-mini-footer--link-list a{font-size:13px;}
-
 #view-source{position:fixed;display:block;right:0;bottom:0;margin-right:40px;margin-bottom:40px;z-index:900;}
 body{margin:0;}
 a img{border:0px;}
